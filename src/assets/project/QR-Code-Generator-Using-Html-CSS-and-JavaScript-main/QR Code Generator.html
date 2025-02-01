@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            background: rgb(200, 220, 224);
+        }
+
+        .form {
+            font-family: Helvetica, sans-serif;
+            max-width: 500px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 16px;
+            background: #ffffff;
+        }
+
+        .form h1 {
+            background: #050505;
+            padding: 20px 0;
+            font-weight: 300;
+            text-align: center;
+            color: #fff;
+            margin: -16px -16px 16px -16px;
+            font-size: 25px;
+        }
+
+        .form input[type="url"] {
+            box-sizing: border-box;
+            width: 100%;
+            background: #fff;
+            margin-bottom: 4%;
+            border: 1px solid #ccc;
+            padding: 4%;
+            font-size: 17px;
+            color: rgb(9, 61, 125);
+        }
+
+        .form input[type="url"]:focus {
+            box-shadow: 0 0 5px #5868bf;
+            padding: 4%;
+            border: 1px solid #5868bf;
+        }
+
+        .form button {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            width: 180px;
+            margin: 0 auto;
+            padding: 3%;
+            background: #0853b6;
+            border: none;
+            border-radius: 3px;
+            font-size: 17px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background: rgba(88, 104, 191, 0.5);
+        }
+
+        #qrcode-container {
+            display: none;
+        }
+
+        .qrcode {
+            padding: 16px;
+            margin-bottom: 30px;
+        }
+
+        .qrcode img {
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(67, 67, 68, 0.25);
+            padding: 4px;
+        }
+
+        #download-btn {
+            display: none;
+            background: #292b29;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        footer{
+            padding-left: 40%;
+        }
+    </style>
+</head>
+<body>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<div class="form">
+    <h1>QR Code Generator</h1>
+    <form>
+        <input type="url" id="website" name="website" placeholder="Mahtot.com type your text here" required />
+
+        <div id="qrcode-container">
+            <div id="qrcode" class="qrcode"></div>
+            <button id="download-btn" onclick="downloadQRCode()">Download QR Code</button>
+        </div>
+
+        <button type="button" onclick="generateQRCode()">Generate QR Code</button>
+    </form>
+
+    <script type="text/javascript">
+        function generateQRCode() {
+            let website = document.getElementById("website").value;
+            if (website) {
+                let qrcodeContainer = document.getElementById("qrcode");
+                qrcodeContainer.innerHTML = "";
+                new QRCode(qrcodeContainer, website);
+
+                document.getElementById("qrcode-container").style.display = "block";
+                document.getElementById("download-btn").style.display = "block";
+            } else {
+                alert("Please enter a valid URL");
+            }
+        }
+
+        function downloadQRCode() {
+            let qrcodeContainer = document.getElementById("qrcode");
+            let qrcodeImage = qrcodeContainer.querySelector('img');
+            
+            // Create a temporary link and trigger the download
+            let link = document.createElement('a');
+            link.href = qrcodeImage.src;
+            link.download = 'thefactspkqrcode.png';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</div>
+
+<!--footer Start-->
+    <footer>
+         
+              
+                
+                
+                
+          
+        
+      </footer>
+ <!--footer End-->   
+</body>
+</html>
