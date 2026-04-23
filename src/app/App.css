@@ -1,12 +1,22 @@
 .start{
-    padding-left:70px;
-   
+    padding-left:0;
+}
 
+.s_c {
+    padding: 20px 12px 40px;
 }
 
 @media only screen and (max-width: 991px) {
     .s_c {
-        padding-top: 40px;
+        padding-top: 34px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .s_c {
+        padding: 34px 24px 56px;
     }
 }
 

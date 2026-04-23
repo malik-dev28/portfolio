@@ -101,6 +101,7 @@ export const ContactUs = () => {
           </Col>
 
           <Col lg="5" className="mb-5" data-aos="fade-right">
+            <div className="contact_info_card">
             <h3 className="color_sec py-4">Get in touch</h3>
             <address>
               <strong>Email:</strong>{" "}
@@ -114,6 +115,7 @@ export const ContactUs = () => {
               )}
             </address>
             <p>{contactConfig.description}</p>
+            </div>
           </Col>
 
           <Col lg="7" className="d-flex align-items-center">

@@ -37,6 +37,13 @@
     z-index: 1000;
 }
 
+.brand_logo {
+    height: 34px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .nav_ac:hover {
     color: var(--text-color-2);
 }
