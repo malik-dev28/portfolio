@@ -1,7 +1,7 @@
 .site__header {
     top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .menu__button {
@@ -22,16 +22,18 @@
 }
 
 .nav_ac {
-    padding: 5px 15px;
+    padding: 8px 16px;
     margin: 0;
-    border: unset;
-    background: var(--primary-color);
-    font-size: 1.25rem;
-    font-family: Marcellus;
+    border: 1px solid rgb(15 23 42 / 12%);
+    background: rgb(255 255 255 / 88%);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
     color: var(--text-color-2);
-    line-height: 2;
-    height: 50px;
-    font-weight: bold;
+    line-height: 1.4;
+    min-height: 48px;
+    font-weight: 600;
     z-index: 1000;
 }
 
@@ -45,7 +47,7 @@
 .br-left {
     position: fixed;
     z-index: 999999;
-    background: var(--primary-color);
+    background: rgb(15 23 42 / 8%);
 }
 
 .br-top {
@@ -138,7 +140,10 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color: var(--primary-color);
+    background:
+        radial-gradient(circle at 15% 20%, #c7f9ee 0%, transparent 30%),
+        radial-gradient(circle at 85% 15%, #dbeafe 0%, transparent 25%),
+        #f8fafc;
     will-change: transform;
     transform: translateY(-100%);
     transition: .5s ease all;
@@ -180,7 +185,8 @@
     transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
     padding: 4px 0px;
     text-decoration: none;
-    font-family: Marcellus;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
 }
 
 .the_menu .menu_item>a:hover {
@@ -195,9 +201,9 @@
 
 .menu_footer {
     bottom: 0;
-    font-family: Marcellus;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    background: var(--primary-color);
+    background: rgb(248 250 252 / 92%);
 }
 
 .menu_footer a {

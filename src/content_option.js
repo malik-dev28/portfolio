@@ -9,43 +9,42 @@ import news from './assets/images/news.jpg'; // Adjust the path as per your proj
 
 
 
-const logotext = "Malik-App";
+const logotext = "hawlet-dev";
 
 const meta = {
-    title: "Abdumalik Wassie",
-    description: "I’m Abdumalik Wassie, a Full Stack Developer currently working in Kombolcha Ethiopia",
+    title: "Hawlet Siad",
+    description: "I’m Hawlet Siad, a 2nd year Computer Science student and Junior Web Developer building practical software projects.",
 };
 
 const introdata = {
-    title: "I’m Abdumalik",
+    title: "I’m Hawlet Siad",
     animated: {
-        first: "I develope websites",
-        second: "I am a Computer Science student",
-        third: "I create software solutions",
+        first: "I develop websites",
+        second: "I am a 2nd year Computer Science student",
+        third: "I am a Junior Web Developer",
     },
-    description: "Passionate about developing innovative and scalable web and software solutions.",
+    description: "Computer Science student focused on building practical, reliable, and user-friendly software projects.",
     your_img_url:Malik, // Replace with your own image URL
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "Hi, I'm Abdumalik Wasie, i 'm Computer Science student at   Wollo University.       I'm a Junior Full-Stack Developer with a focus on web development technologies like React, Node.js, HTML, CSS, and JavaScript. I love exploring new technologies and building sleek, responsive, and user-friendly applications.Currently, I am working on my portfolio project to showcase my skills in building functional and interactive websites. I have experience in developing various projects, including e-commerce   Website and ASK Ai like chat-gpt, and I am always eager to learn more to improve my abilities.I believe in the power of technology to solve real-world problems, and I’m excited to  continue growing  as a developer.  Feel free to browse my work and contact me if you’re interested in collaborating or discussing potential opportunities."  ,
+    aboutme: "Hi, I'm Hawlet Siad, a 2nd year Computer Science student and Junior Web Developer. I build practical web and software projects using React, HTML, CSS, JavaScript, and PHP. I am passionate about learning new technologies, especially Artificial Intelligence, Microsoft Azure, and Microsoft tools. I enjoy solving real-world problems and creating clean, responsive, and user-friendly applications. Feel free to explore my projects and contact me for collaboration opportunities.",
 };
 
 const skills = [
-    { name: "HTML and css", value: 90 },
-    { name: "pyton", value: 40 },
-    { name: "JavaScript", value: 60 },
-    { name: "React", value: 65 },
-    { name: "PHP", value: 75 },
-    { name: "Aids", value: 50},
+    { name: "HTML & CSS", value: 65 },
+    { name: "JavaScript", value: 55 },
+    { name: "React (Beginner)", value: 50 },
+    { name: "Graphic Design", value: 70 },
+    { name: "Video Editing", value: 65 },
      
 ];
 
 const services = [
     {
-        title: "Full stack web Development",
-        description: "Creating visually appealing and responsive user interfaces using the latest front-end technologies   and backend technologies ",
+        title: "Junior Front-End Developer",
+        description: "Building clean, responsive, and user-friendly interfaces using modern front-end technologies.",
     },
     {
         title: "Software Development",
@@ -62,35 +61,35 @@ const dataportfolio = [
     {
         img:car, // Internal image in the `public/images/` folder
         description: "Car Rental System in java ",
-        link: "https://github.com/abdumalik06432530/CarrentalSystem", // Replace with your actual file path
+        link: "https://github.com/iiihibu26-dev/CarrentalSystem", // Replace with your actual file path
     },
     {
         img:App, // Dynamically imported image from the `src` folder
         description: "Apple website Clone using Html and css",
-        link: "https://github.com/abdumalik06432530/Apple-clone-website", // Replace with your actual project link
+        link: "https://github.com/iiihibu26-dev/Apple-clone-website", // Replace with your actual project link
     },
     {
         img: chat, // External image source
         description: "Ask Ai using pyton",
-        link: "https://github.com/abdumalik06432530/AskAi", // Replace with your actual project link
+        link: "https://github.com/iiihibu26-dev/AskAi", // Replace with your actual project link
     },
     {
         img:news, // External image source
         description: "News website using react",
-        link: "https://www.instagram.com/abdul_m_e_l_i_k/", // Replace with your actual project link
+        link: "https://github.com/iiihibu26-dev", // Replace with your actual project link
     },
 
     {
         img:Sunday, // External image source
         description: "E-Commerce Platform – A scalable online shopping solution using PHP, SQL, JavaScript, and Bootstrap.",
-        link: "https://github.com/abdumalik06432530/Sunday-Markett", // Replace with your actual project link
+        link: "https://github.com/iiihibu26-dev/Sunday-Markett", // Replace with your actual project link
     },
     
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "abdumalik06432530@gmail.com",
-    YOUR_FONE: "+251-928281641",
+    YOUR_EMAIL: "Hawletseid1919@gmail.com",
+    YOUR_FONE: "+25192 953 5961",
     description: "Feel free to reach out for collaborations, project inquiries, or any tech-related discussions.",
     YOUR_SERVICE_ID: "service_puqy12i", 
     YOUR_TEMPLATE_ID: "template_kx28j4r", 
@@ -98,9 +97,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com/abdumalik06432530", // Replace with your GitHub profile
-    linkedin: "https://www.linkedin.com/in/abdumalik-wassie-a8ba01307/", // Replace with your LinkedIn profile
-    instagram: "https://www.instagram.com/abdul_m_e_l_i_k/", // Replace with your Twitter profile
+    github: "https://github.com/iiihibu26-dev", // Replace with your GitHub profile
+    linkedin: "https://www.linkedin.com/in/hawlet-seid-75a593405?utm_source=share_via&utm_content=profile&utm_medium=member_android", // Replace with your LinkedIn profile
 };
 
 export {

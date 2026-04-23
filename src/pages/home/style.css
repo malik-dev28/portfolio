@@ -31,10 +31,10 @@ section {
 }
 
 .intro_sec {
-    height: calc(100vh - 60px);
-    min-height: 700px;
-    height: 100vh;
+    min-height: 640px;
+    height: auto;
     margin-top: -80px;
+    padding: 40px 0 20px;
 }
 
 @media (max-width:991.98px) {
@@ -49,6 +49,10 @@ section {
     width: 50%;
 }
 
+.intro_sec .text {
+    padding-right: 32px;
+}
+
 @media (max-width:991.98px) {
     .intro_sec .text,
     .intro_sec .h_bg-image {
@@ -57,7 +61,7 @@ section {
 }
 
 .intro_sec .intro {
-    max-width: 450px;
+    max-width: 520px;
     margin: 0 auto;
 }
 
@@ -81,9 +85,10 @@ section {
 }
 
 .intro_sec .text h1 {
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 34px;
+    margin-bottom: 28px;
     font-weight: 700;
+    color: var(--text-color);
 }
 
 .intro_sec .text h3 {
@@ -95,21 +100,26 @@ section {
     padding: 0;
     background-size: cover;
     background-position: center;
-    min-height: 700px;
-    max-width: 800px;
+    min-height: 540px;
+    max-width: 520px;
+    margin: 0 auto;
     position: relative;
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgb(15 23 42 / 22%);
+    border: 1px solid rgb(255 255 255 / 70%);
 }
 
 .ac_btn {
-    padding: 4px 19px;
+    padding: 10px 20px;
     color: var(--secondary-color);
     position: relative;
-    border: var(--secondary-color) 2px solid;
+    border: 1px solid rgb(15 23 42 / 12%);
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 12px;
     margin-right: 20px;
+    backdrop-filter: blur(6px);
 }
 
 .ac_btn a {
@@ -117,7 +127,8 @@ section {
 }
 
 .ac_btn:hover {
-    box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
+    box-shadow: 0 12px 28px rgb(15 23 42 / 18%);
+    transform: translateY(-2px);
 }
 
 .ac_btn:hover .one {
@@ -148,7 +159,7 @@ section {
 }
 
 .ac_btn .one {
-    background-color: #000;
+    background-color: #0f172a;
     transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
     z-index: -4;
@@ -168,8 +179,8 @@ section {
 }
 
 #button_p {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: #0f172a;
+    color: #ffffff;
 }
 
 #button_h:hover {
@@ -195,10 +206,14 @@ section {
 }
 
 @media (max-width:991.98px) {
+    .intro_sec .text {
+        padding-right: 0;
+    }
     .intro_sec .h_bg-image {
-        height: 600px;
+        height: 420px;
         min-height: 75vh;
         margin-bottom: 30px;
+        max-width: 92%;
     }
     .intro_sec .h_bg-image .block {
         top: unset;
@@ -232,5 +247,5 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    filter: saturate(0.5);
+    filter: saturate(0.88) contrast(1.04);
 }

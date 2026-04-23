@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import CV from "../../assets/images/CV.jpg";
 
 export const Home = () => {
   // Ensure all required data is available
@@ -45,14 +46,14 @@ export const Home = () => {
                 </h1>
                 <p className="mb-1x">{description || "Your site description here."}</p>
                 <div className="intro_btn-action pb-5">
-                  <Link to="/portfolio" className="text_2">
+                  <a href={CV} download="Hawlet-Seid-CV.jpg" className="text_2">
                     <div id="button_p" className="ac_btn btn">
-                      My Portfolio
+                      CV-Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </Link>
+                  </a>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
